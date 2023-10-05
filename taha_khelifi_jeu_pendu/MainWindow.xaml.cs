@@ -22,7 +22,7 @@ namespace taha_khelifi_jeu_pendu
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();  //ee
         }
     }
 }
