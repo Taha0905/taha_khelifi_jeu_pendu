@@ -20,9 +20,24 @@ namespace taha_khelifi_jeu_pendu
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<string> motsEn4Lettres = new List<string> { "chat", "rare", "vent", "rond" };
+        private Random random = new Random();
+
         public MainWindow()
         {
-            InitializeComponent(); 
+            InitializeComponent();
+        }
+
+        private void BTN_Commencer_Click_1(object sender, RoutedEventArgs e)
+        {
+            {
+                // Sélectionnez un mot aléatoire dans la liste
+                int indexMotAleatoire = random.Next(motsEn4Lettres.Count);
+                string motAleatoire = motsEn4Lettres[indexMotAleatoire];
+
+                // Affichez le mot dans TextBlock TB_Mot
+                TB_Mot.Text = motAleatoire;
+            }
         }
     }
 }

@@ -19,7 +19,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" Content="Jeu du pendu" Margin="10" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
-            <Button Name="BTN_Commencer" Grid.Column="1" Margin="10" Content="Commencer !" FontSize="24" FontWeight="Bold" Background="#FF305665"/>
+            <Button Name="BTN_Commencer" Grid.Column="1" Margin="10" Content="Commencer !" FontSize="24" FontWeight="Bold" Background="#FF305665" Click="BTN_Commencer_Click_1"/>
         </Grid>
 
         <!-- Design du jeu générale -->
@@ -36,7 +36,7 @@
 
                 <!-- Mot à trouver -->
                 <Grid Grid.Row="0"  Background="LightGray">
-                    <TextBox Name="TB_Mot" Grid.Row="0" Grid.Column="1" Margin="10" TextAlignment="Center" TextChanged="TB_Mot_TextChanged" Text="Mot à trouver" FontSize="48" FontWeight="Bold" IsEnabled="False"/>
+                    <TextBox Name="TB_Mot" Grid.Row="0" Grid.Column="1" Margin="10" TextAlignment="Center" Text="Mot à trouver" FontSize="48" FontWeight="Bold" IsEnabled="False"/>
                 </Grid>
                 <!-- Clavier -->
                 <Grid Grid.Row="1"  Background="#FF305665" Margin="10">
