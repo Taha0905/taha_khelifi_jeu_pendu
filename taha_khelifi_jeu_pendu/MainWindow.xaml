@@ -6,7 +6,89 @@
         xmlns:local="clr-namespace:taha_khelifi_jeu_pendu"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF305665">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Titre et boutton commencer -->
+        <Grid Grid.Row="0"  Background="LightGray" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content="Jeu du pendu" Margin="10" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+            <Button Name="BTN_Commencer" Grid.Column="1" Margin="10" Content="Commencer !" FontSize="24" FontWeight="Bold" Background="#FF305665"/>
+        </Grid>
+
+        <!-- Design du jeu générale -->
+        <Grid Grid.Row="1"  Background="LightGray" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0"  Background="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Mot à trouver -->
+                <Grid Grid.Row="0"  Background="LightGray">
+                    <TextBox Name="TB_Mot" Grid.Row="0" Grid.Column="1" Margin="10" TextAlignment="Center" TextChanged="TB_Mot_TextChanged" Text="Mot à trouver" FontSize="48" FontWeight="Bold" IsEnabled="False"/>
+                </Grid>
+                <!-- Clavier -->
+                <Grid Grid.Row="1"  Background="#FF305665" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Button Name="BTN_A" Grid.Row="0" Grid.Column="0" Margin="3" Content="A"/>
+                    <Button Name="BTN_B" Grid.Row="0" Grid.Column="1" Margin="3" Content="B"/>
+                    <Button Name="BTN_C" Grid.Row="0" Grid.Column="2" Margin="3" Content="C"/>
+                    <Button Name="BTN_D" Grid.Row="0" Grid.Column="3" Margin="3" Content="D"/>
+                    <Button Name="BTN_E" Grid.Row="0" Grid.Column="4" Margin="3" Content="E"/>
+                    <Button Name="BTN_F" Grid.Row="0" Grid.Column="5" Margin="3" Content="F"/>
+                    <Button Name="BTN_G" Grid.Row="1" Grid.Column="0" Margin="3" Content="G"/>
+                    <Button Name="BTN_H" Grid.Row="1" Grid.Column="1" Margin="3" Content="H"/>
+                    <Button Name="BTN_I" Grid.Row="1" Grid.Column="2" Margin="3" Content="I"/>
+                    <Button Name="BTN_J" Grid.Row="1" Grid.Column="3" Margin="3" Content="J"/>
+                    <Button Name="BTN_K" Grid.Row="1" Grid.Column="4" Margin="3" Content="K"/>
+                    <Button Name="BTN_L" Grid.Row="1" Grid.Column="5" Margin="3" Content="L"/>
+                    <Button Name="BTN_M" Grid.Row="2" Grid.Column="0" Margin="3" Content="M"/>
+                    <Button Name="BTN_N" Grid.Row="2" Grid.Column="1" Margin="3" Content="N"/>
+                    <Button Name="BTN_O" Grid.Row="2" Grid.Column="2" Margin="3" Content="O"/>
+                    <Button Name="BTN_P" Grid.Row="2" Grid.Column="3" Margin="3" Content="P"/>
+                    <Button Name="BTN_Q" Grid.Row="2" Grid.Column="4" Margin="3" Content="Q"/>
+                    <Button Name="BTN_R" Grid.Row="2" Grid.Column="5" Margin="3" Content="R"/>
+                    <Button Name="BTN_S" Grid.Row="3" Grid.Column="0" Margin="3" Content="S"/>
+                    <Button Name="BTN_T" Grid.Row="3" Grid.Column="1" Margin="3" Content="T"/>
+                    <Button Name="BTN_U" Grid.Row="3" Grid.Column="2" Margin="3" Content="U"/>
+                    <Button Name="BTN_V" Grid.Row="3" Grid.Column="3" Margin="3" Content="V"/>
+                    <Button Name="BTN_W" Grid.Row="3" Grid.Column="4" Margin="3" Content="W"/>
+                    <Button Name="BTN_X" Grid.Row="3" Grid.Column="5" Margin="3" Content="X"/>
+                    <Button Name="BTN_Y" Grid.Row="4" Grid.Column="2" Margin="3" Content="Y"/>
+                    <Button Name="BTN_Z" Grid.Row="4" Grid.Column="3" Margin="3" Content="Z"/>
+                </Grid>
+            </Grid>
+
+            <!-- Définition du nombre de vie -->
+            <Grid Grid.Column="2"  Background="LightGray" Margin="10">
+                <TextBox Name="TB_Vie_Restant" Grid.Row="0" Grid.Column="1" Margin="10" TextAlignment="Center" FontSize="48" Text="4" FontWeight="Bold" IsEnabled="False"/>
+            </Grid>
+        </Grid>
     </Grid>
+
 </Window>
