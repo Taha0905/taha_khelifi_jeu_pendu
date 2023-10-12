@@ -55,38 +55,42 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Button Name="BTN_A" Grid.Row="0" Grid.Column="0" Margin="3" Content="A"/>
-                    <Button Name="BTN_B" Grid.Row="0" Grid.Column="1" Margin="3" Content="B"/>
-                    <Button Name="BTN_C" Grid.Row="0" Grid.Column="2" Margin="3" Content="C"/>
-                    <Button Name="BTN_D" Grid.Row="0" Grid.Column="3" Margin="3" Content="D"/>
-                    <Button Name="BTN_E" Grid.Row="0" Grid.Column="4" Margin="3" Content="E"/>
-                    <Button Name="BTN_F" Grid.Row="0" Grid.Column="5" Margin="3" Content="F"/>
-                    <Button Name="BTN_G" Grid.Row="1" Grid.Column="0" Margin="3" Content="G"/>
-                    <Button Name="BTN_H" Grid.Row="1" Grid.Column="1" Margin="3" Content="H"/>
-                    <Button Name="BTN_I" Grid.Row="1" Grid.Column="2" Margin="3" Content="I"/>
-                    <Button Name="BTN_J" Grid.Row="1" Grid.Column="3" Margin="3" Content="J"/>
-                    <Button Name="BTN_K" Grid.Row="1" Grid.Column="4" Margin="3" Content="K"/>
-                    <Button Name="BTN_L" Grid.Row="1" Grid.Column="5" Margin="3" Content="L"/>
-                    <Button Name="BTN_M" Grid.Row="2" Grid.Column="0" Margin="3" Content="M"/>
-                    <Button Name="BTN_N" Grid.Row="2" Grid.Column="1" Margin="3" Content="N"/>
-                    <Button Name="BTN_O" Grid.Row="2" Grid.Column="2" Margin="3" Content="O"/>
-                    <Button Name="BTN_P" Grid.Row="2" Grid.Column="3" Margin="3" Content="P"/>
-                    <Button Name="BTN_Q" Grid.Row="2" Grid.Column="4" Margin="3" Content="Q"/>
-                    <Button Name="BTN_R" Grid.Row="2" Grid.Column="5" Margin="3" Content="R"/>
-                    <Button Name="BTN_S" Grid.Row="3" Grid.Column="0" Margin="3" Content="S"/>
-                    <Button Name="BTN_T" Grid.Row="3" Grid.Column="1" Margin="3" Content="T"/>
-                    <Button Name="BTN_U" Grid.Row="3" Grid.Column="2" Margin="3" Content="U"/>
-                    <Button Name="BTN_V" Grid.Row="3" Grid.Column="3" Margin="3" Content="V"/>
-                    <Button Name="BTN_W" Grid.Row="3" Grid.Column="4" Margin="3" Content="W"/>
-                    <Button Name="BTN_X" Grid.Row="3" Grid.Column="5" Margin="3" Content="X"/>
-                    <Button Name="BTN_Y" Grid.Row="4" Grid.Column="2" Margin="3" Content="Y"/>
-                    <Button Name="BTN_Z" Grid.Row="4" Grid.Column="3" Margin="3" Content="Z"/>
+                    <Button Name="BTN_A" Grid.Row="0" Grid.Column="0" Margin="3" Content="A" Click="Clavier_Click"/>
+                    <Button Name="BTN_B" Grid.Row="0" Grid.Column="1" Margin="3" Content="B" Click="Clavier_Click"/>
+                    <Button Name="BTN_C" Grid.Row="0" Grid.Column="2" Margin="3" Content="C" Click="Clavier_Click"/>
+                    <Button Name="BTN_D" Grid.Row="0" Grid.Column="3" Margin="3" Content="D" Click="Clavier_Click"/>
+                    <Button Name="BTN_E" Grid.Row="0" Grid.Column="4" Margin="3" Content="E" Click="Clavier_Click"/>
+                    <Button Name="BTN_F" Grid.Row="0" Grid.Column="5" Margin="3" Content="F" Click="Clavier_Click"/>
+                    <Button Name="BTN_G" Grid.Row="1" Grid.Column="0" Margin="3" Content="G" Click="Clavier_Click"/>
+                    <Button Name="BTN_H" Grid.Row="1" Grid.Column="1" Margin="3" Content="H" Click="Clavier_Click"/>
+                    <Button Name="BTN_I" Grid.Row="1" Grid.Column="2" Margin="3" Content="I" Click="Clavier_Click"/>
+                    <Button Name="BTN_J" Grid.Row="1" Grid.Column="3" Margin="3" Content="J" Click="Clavier_Click"/>
+                    <Button Name="BTN_K" Grid.Row="1" Grid.Column="4" Margin="3" Content="K" Click="Clavier_Click"/>
+                    <Button Name="BTN_L" Grid.Row="1" Grid.Column="5" Margin="3" Content="L" Click="Clavier_Click"/>
+                    <Button Name="BTN_M" Grid.Row="2" Grid.Column="0" Margin="3" Content="M" Click="Clavier_Click"/>
+                    <Button Name="BTN_N" Grid.Row="2" Grid.Column="1" Margin="3" Content="N" Click="Clavier_Click"/>
+                    <Button Name="BTN_O" Grid.Row="2" Grid.Column="2" Margin="3" Content="O" Click="Clavier_Click"/>
+                    <Button Name="BTN_P" Grid.Row="2" Grid.Column="3" Margin="3" Content="P" Click="Clavier_Click"/>
+                    <Button Name="BTN_Q" Grid.Row="2" Grid.Column="4" Margin="3" Content="Q" Click="Clavier_Click"/>
+                    <Button Name="BTN_R" Grid.Row="2" Grid.Column="5" Margin="3" Content="R" Click="Clavier_Click"/>
+                    <Button Name="BTN_S" Grid.Row="3" Grid.Column="0" Margin="3" Content="S" Click="Clavier_Click"/>
+                    <Button Name="BTN_T" Grid.Row="3" Grid.Column="1" Margin="3" Content="T" Click="Clavier_Click"/>
+                    <Button Name="BTN_U" Grid.Row="3" Grid.Column="2" Margin="3" Content="U" Click="Clavier_Click"/>
+                    <Button Name="BTN_V" Grid.Row="3" Grid.Column="3" Margin="3" Content="V" Click="Clavier_Click"/>
+                    <Button Name="BTN_W" Grid.Row="3" Grid.Column="4" Margin="3" Content="W" Click="Clavier_Click"/>
+                    <Button Name="BTN_X" Grid.Row="3" Grid.Column="5" Margin="3" Content="X" Click="Clavier_Click"/>
+                    <Button Name="BTN_Y" Grid.Row="4" Grid.Column="2" Margin="3" Content="Y" Click="Clavier_Click"/>
+                    <Button Name="BTN_Z" Grid.Row="4" Grid.Column="3" Margin="3" Content="Z" Click="Clavier_Click"/>
                 </Grid>
             </Grid>
 
             <!-- Définition du nombre de vie -->
             <Grid Grid.Column="2"  Background="LightGray" Margin="10">
-                <TextBox Name="TB_Vie_Restant" Grid.Row="0" Grid.Column="1" Margin="10" TextAlignment="Center" FontSize="48" Text="4" FontWeight="Bold" IsEnabled="False"/>
+                <TextBox Name="TB_Vie_Restant" Grid.Row="0" Grid.Column="1" Margin="10" TextAlignment="Center" FontSize="48" Text="4" FontWeight="Bold" IsEnabled="False">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
             </Grid>
         </Grid>
     </Grid>

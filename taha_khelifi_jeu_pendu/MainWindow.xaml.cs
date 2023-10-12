@@ -20,6 +20,8 @@ namespace taha_khelifi_jeu_pendu
     /// </summary>
     public partial class MainWindow : Window
     {
+        //variable
+
         private List<string> motsEn4Lettres = new List<string> { "chat", "rare", "vent", "rond" };
         private Random random = new Random();
 
@@ -35,9 +37,16 @@ namespace taha_khelifi_jeu_pendu
                 int indexMotAleatoire = random.Next(motsEn4Lettres.Count);
                 string motAleatoire = motsEn4Lettres[indexMotAleatoire];
 
-                // Affichez le mot dans TextBlock TB_Mot
-                TB_Mot.Text = motAleatoire;
+                // Créez une chaîne de caractères composée d'astérisques de la même longueur que le mot
+                string motCache = new string('*', motAleatoire.Length);
+
+                // Affichez le mot caché dans TextBlock TB_Mot
+                TB_Mot.Text = motCache;
             }
+        }
+        private void Clavier_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
         }
     }
 }
