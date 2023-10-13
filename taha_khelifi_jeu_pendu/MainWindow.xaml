@@ -39,7 +39,7 @@
                     <TextBox Name="TB_Mot" Grid.Row="0" Grid.Column="1" Margin="10" TextAlignment="Center" Text="Mot à trouver" FontSize="48" FontWeight="Bold" IsEnabled="False"/>
                 </Grid>
                 <!-- Clavier -->
-                <Grid Grid.Row="1"  Background="#FF305665" Margin="10">
+                <Grid x:Name="ClavierGrid" Grid.Row="1"  Background="#FF305665" Margin="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
@@ -86,7 +86,11 @@
 
             <!-- Définition du nombre de vie -->
             <Grid Grid.Column="2"  Background="LightGray" Margin="10">
-                <TextBox Name="TB_Vie_Restant" Grid.Row="0" Grid.Column="1" Margin="10" TextAlignment="Center" FontSize="48" Text="4" FontWeight="Bold" IsEnabled="False">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="19*"/>
+                    <RowDefinition Height="30*"/>
+                </Grid.RowDefinitions>
+                <TextBox Name="TB_Vie_Restant" Grid.Row="0" Margin="10,10,10,10" TextAlignment="Center" FontSize="48" Text="4" FontWeight="Bold" IsEnabled="False" Grid.RowSpan="2">
                     <TextBox.Background>
                         <ImageBrush/>
                     </TextBox.Background>
