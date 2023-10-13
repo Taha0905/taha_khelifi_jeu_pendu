@@ -35,7 +35,7 @@ namespace taha_khelifi_jeu_pendu
             TB_Vie_Restant.Text = viesRestantes.ToString();
 
             // Générez un nouveau mot aléatoire.
-            List<string> mots = new List<string> { "MOT1", "MOT2", "MOT3" /* Ajoutez plus de mots ici */ };
+            List<string> mots = new List<string> { "RARE", "JEUX", "BALLE" /* Ajoutez plus de mots ici */ };
             Random random = new Random();
             motAdeviner = mots[random.Next(mots.Count)];
 
